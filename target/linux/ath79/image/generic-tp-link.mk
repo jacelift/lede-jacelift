@@ -579,6 +579,21 @@ define Device/tplink_tl-wdr6500-v2
 endef
 TARGET_DEVICES += tplink_tl-wdr6500-v2
 
+define Device/tplink_tl-wdr5800-v1
+  $(Device/tplink-16mlzma)
+  SOC := qca9561
+  DEVICE_MODEL := TL-WDR5800
+  DEVICE_VARIANT := v1
+  DEVICE_PACKAGES := kmod-ath10k ath10k-firmware-qca9887
+  IMAGE_SIZE := 8000k
+  KERNEL := kernel-bin | append-dtb | lzma | uImage lzma
+  KERNEL_INITRAMFS := kernel-bin | append-dtb | lzma | uImage lzma | tplink-v1-header
+  TPLINK_HWID := 0x58000001
+  TPLINK_HEADER_VERSION := 1
+  SUPPORTED_DEVICES += tl-wdr5800-v1
+endef
+TARGET_DEVICES += tplink_tl-wdr5800-v1
+
 define Device/tplink_tl-wdr7500-v3
   $(Device/tplink-8mlzma)
   SOC := qca9558
