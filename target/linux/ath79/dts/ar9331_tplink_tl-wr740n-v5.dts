@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later OR MIT
 
-#include "ar9331_tplink_tl-wr741nd-v4.dtsi"
+#include "ar9331_tplink_tl-wr710n-8m.dtsi"
 
 / {
 	model = "TP-Link TL-WR740N v5";
