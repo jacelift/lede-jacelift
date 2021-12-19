@@ -37,6 +37,7 @@ ramips_setup_interfaces()
 	asus,rt-n11p-b1|\
 	asus,rt-n12-vp-b1|\
 	hiwifi,hc5661a|\
+	tplink,tl-wdr5620-v3|\
 	mediatek,mt7628an-eval-board|\
 	mercury,mac1200r-v2|\
 	totolink,lr1200|\
@@ -186,6 +187,7 @@ ramips_setup_macs()
 		label_mac=$wan_mac
 		;;
 	hiwifi,hc5661a|\
+	tplink,tl-wdr5620-v3|\
 	hiwifi,hc5761a|\
 	hiwifi,hc5861b)
 		lan_mac=$(mtd_get_mac_ascii bdinfo "Vfac_mac ")
