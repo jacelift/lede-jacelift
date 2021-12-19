@@ -172,13 +172,22 @@ endef
 TARGET_DEVICES += hilink_hlk-7688a
 
 define Device/hiwifi_hc5661a
-  IMAGE_SIZE := 15808k
+  IMAGE_SIZE := 16384k
   DEVICE_VENDOR := HiWiFi
   DEVICE_MODEL := HC5661A
   SUPPORTED_DEVICES += hc5661a
-  DEVICE_PACKAGES := kmod-sdhci-mt7620
+  DEVICE_PACKAGES := kmod-mt76x2
 endef
 TARGET_DEVICES += hiwifi_hc5661a
+
+define Device/tplink_tl-wdr5620-v3
+  IMAGE_SIZE := 16384k
+  DEVICE_VENDOR := TPLINK
+  DEVICE_MODEL := TL-WDR5620 v3
+  SUPPORTED_DEVICES += tl-wdr5620-v3
+  DEVICE_PACKAGES := kmod-mt76x2
+endef
+TARGET_DEVICES += tplink_tl-wdr5620-v3
 
 define Device/hiwifi_hc5761a
   IMAGE_SIZE := 15808k
