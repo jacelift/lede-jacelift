@@ -107,6 +107,7 @@ glinet,gl-mt750)
 	ucidef_set_led_netdev "wifi_led" "wifi" "wlan" "wlan0"
 	;;
 hiwifi,hc5661|\
+fast,fwr200-v1|\
 hiwifi,hc5761)
 	ucidef_set_led_switch "internet" "internet" "blue:internet" "switch0" "0x01"
 	;;
