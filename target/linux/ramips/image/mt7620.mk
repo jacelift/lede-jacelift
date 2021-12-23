@@ -461,6 +461,15 @@ define Device/hiwifi_hc5661
 endef
 TARGET_DEVICES += hiwifi_hc5661
 
+define Device/fast_fwr200-v1
+  SOC := mt7620a
+  IMAGE_SIZE := 15808k
+  DEVICE_VENDOR := FAST
+  DEVICE_MODEL := FWR200 v1
+  SUPPORTED_DEVICES += fwr200-v1
+endef
+TARGET_DEVICES += fast_fwr200-v1
+
 define Device/hiwifi_hc5761
   SOC := mt7620a
   IMAGE_SIZE := 15808k
