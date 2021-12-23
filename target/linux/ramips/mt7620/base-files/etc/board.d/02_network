@@ -82,6 +82,7 @@ ramips_setup_interfaces()
 	glinet,gl-mt300n|\
 	glinet,gl-mt750|\
 	hiwifi,hc5661|\
+	fast,fwr200-v1|\
 	wrtnode,wrtnode|\
 	zbtlink,zbt-wa05|\
 	zyxel,keenetic-omni-ii)
@@ -324,6 +325,7 @@ ramips_setup_macs()
 		label_mac=$(mtd_get_mac_binary factory 0x4)
 		;;
 	hiwifi,hc5661|\
+	fast,fwr200-v1|\
 	hiwifi,hc5761|\
 	hiwifi,hc5861)
 		lan_mac=$(mtd_get_mac_ascii bdinfo "Vfac_mac ")
