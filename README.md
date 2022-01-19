@@ -1,7 +1,7 @@
 created_at: 2021-07-12T16:24:53Z
 =
 ```
-https://api.github.com/repos/jacelift/lede17.01_jacelift
+https://api.github.com/repos/jacelift/lede_jacelift
   "updated_at": "2022-01-17T07:31:37Z",
   "pushed_at": "2021-12-29T07:18:35Z",
 ```
