@@ -385,6 +385,16 @@ define Device/d-team_newifi-d2
 endef
 TARGET_DEVICES += d-team_newifi-d2
 
+define Device/ZTE_E8822
+  $(Device/uimage-lzma-loader)
+  IMAGE_SIZE := 32448k
+  DEVICE_VENDOR := ZTE
+  DEVICE_MODEL := E8822
+  DEVICE_PACKAGES := kmod-mt7603 kmod-mt76x2 kmod-usb2 kmod-usb3 \
+	kmod-usb-ledtrig-usbport
+endef
+TARGET_DEVICES += ZTE_E8822
+
 define Device/RX_WT600
   $(Device/uimage-lzma-loader)
   IMAGE_SIZE := 32448k
