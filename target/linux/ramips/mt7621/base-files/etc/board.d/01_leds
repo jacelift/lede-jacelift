@@ -8,6 +8,11 @@ board=$(board_name)
 board_config_update
 
 case $board in
+ZTE,E8822)
+	ucidef_set_led_switch "internet" "internet" "blue:internet" "switch0" "0x10"
+	ucidef_set_led_netdev "wlan2g" "WiFi 2.4GHz" "blue:wlan2g" "ra0"
+	ucidef_set_led_netdev "wlan5g" "WiFi 5GHz" "blue:wlan5g" "rai0"
+	;;
 asus,rt-n56u-b1)
 	ucidef_set_led_netdev "lan" "LAN link" "blue:lan" "br-lan"
 	ucidef_set_led_netdev "wan" "WAN link" "blue:wan" "wan"
